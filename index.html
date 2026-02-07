@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">E-Shop India</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+                <li class="cart">
+                    <a href="#" id="cart-link">Cart</a>
+                    <span id="cart-count">0</span>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+ 
+    <main class="product-grid">
+    <div class="product-card" data-id="1" data-name="Classic T-Shirt">
+        <img src="tshirt.png" alt="T-Shirt">
+        <h2>Classic T-Shirt</h2>
+        <p class="price" data-base-price="499">₹499</p>
+        
+        <div class="quantity-selector">
+            <button type="button" class="qty-btn minus">-</button>
+            <input type="text" class="qty-input" value="1" readonly>
+            <button type="button" class="qty-btn plus">+</button>
+        </div>
+        
+        <p class="total-price">Total: ₹499</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="2" data-name="Wireless Earbuds">
+        <img src="earbuds.webp" alt="Earbuds">
+        <h2>Wireless Earbuds</h2>
+        <p class="price" data-base-price="1999">₹1,999</p>
+        
+        <div class="quantity-selector">
+            <button type="button" class="qty-btn minus">-</button>
+            <input type="text" class="qty-input" value="1" readonly>
+            <button type="button" class="qty-btn plus">+</button>
+        </div>
+        
+        <p class="total-price">Total: ₹1,999</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-id="3" data-name="Smart Watch">
+        <img src="watch.webp" alt="Smart Watch">
+        <h2>Smart Watch</h2>
+        <p class="price" data-base-price="3499">₹3,499</p>
+        
+        <div class="quantity-selector">
+            <button type="button" class="qty-btn minus">-</button>
+            <input type="text" class="qty-input" value="1" readonly>
+            <button type="button" class="qty-btn plus">+</button>
+        </div>
+        
+        <p class="total-price">Total: ₹3,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</main>
+   
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p><strong>Total Amount:</strong> <span id="cart-total">₹0</span></p>
+            <button id="clear-cart">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

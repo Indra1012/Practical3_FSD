@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - E-Shop India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">E-Shop India</div>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <form class="login-form" id="login-form">
+            <h2>Login</h2>
+            <label for="username">Username / Email</label>
+            <input type="text" id="username" placeholder="Enter anything" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter anything" required>
+
+            <button type="submit">Login</button>
+            <p style="text-align:center; margin-top:1rem; color:#666;">
+                (Any username & password will work)
+            </p>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Fake login - always succeeds
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
